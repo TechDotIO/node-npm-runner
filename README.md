@@ -1,6 +1,6 @@
 # node-unittest-runner
 
-This runner works with a node project. Mocha will be launched in the root directory and the result will be returned in the CodinGame format.
+This runner works with a node project. Mocha will be launched in the root directory and the result will be sent back to CodinGame.
 
 ## Example
 
