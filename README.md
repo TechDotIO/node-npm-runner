@@ -16,7 +16,7 @@ module.exports = toUpper;
 In order to test the answer, the following unit test is created (file `tests/test.js`):
 
 ```javascript
-var toUpper = require('./toupper.js');
+var toUpper = require('./uppercase.js');
 var assert = require('assert');
 it('should return HELLO', function() {
 	assert.equal('HELLO', toUpper('hello'));
