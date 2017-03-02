@@ -1,6 +1,6 @@
-# node-unittest-runner
+# node-mocha-runner
 
-This runner works with a node project. Mocha will be launched in the root directory and the result will be sent back to CodinGame.
+This CoginGame runner works with a node project. Mocha will be launched in the root directory and the result will be sent back to CodinGame.
 
 ## Example
 
@@ -16,7 +16,7 @@ module.exports = toUpper;
 In order to test the answer, the following unit test is created (file `tests/test.js`):
 
 ```javascript
-var toUpper = require('./toupper.js');
+var toUpper = require('./uppercase.js');
 var assert = require('assert');
 it('should return HELLO', function() {
 	assert.equal('HELLO', toUpper('hello'));
