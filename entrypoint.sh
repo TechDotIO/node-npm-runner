@@ -1,5 +1,7 @@
 #!/bin/bash
+
 cd /project/target
-cp /project/answer/* .
+
+cp -r /project/answer/* .
 
 mocha $@ --reporter list
