@@ -1,3 +1,5 @@
 #!/bin/bash
 cd /project/target
-npm install
+if [ -f package.json ]; then
+	npm install
+fi
