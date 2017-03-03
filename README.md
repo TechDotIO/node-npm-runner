@@ -12,7 +12,7 @@ In order to use this runner in your project, edit the `codingame.yml` file and a
 
     runner:
       name: codingame/node-mocha-runner
-      version: 1.0
+      version: 1.0.0-7.4
 
 # Compatibility
 
