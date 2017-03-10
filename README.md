@@ -13,7 +13,7 @@ In order to use this runner in your project, edit the `codingame.yml` file and a
 ```yaml
 runner:
     name: codingame/node-npm-runner
-    version: 1.1.0-7.4
+    version: 1.1.0-node-7.4
 
 ```
 
