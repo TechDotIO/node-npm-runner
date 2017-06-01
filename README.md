@@ -11,9 +11,7 @@ This node7.4 runner installs the dependencies using `npm install`. The dependenc
 In order to use this runner in your project, edit the `codingame.yml` file and add the following lines to your project:
 
 ```yaml
-runner:
-    name: codingame/node-npm-runner
-    version: 1.1.0-node-7.4
+runner: techio/node-npm-runner:1.1.0-node-7.4
 
 ```
 
