@@ -1,21 +1,20 @@
 # node-npm-runner
 
-This CoginGame runner works with a node project. Mocha will be launched in the root directory and the result will be sent back to CodinGame.
+This Tech.io runner works with a node project. Mocha will be launched in the root directory and the result will be sent back to Tech.io.
 
-# What it Does
+## What it Does
 
 This node7.4 runner installs the dependencies using `npm install`. The dependencies must be specified in the `package.json` file at the project root as specified in the [official documentation](https://docs.npmjs.com/getting-started/using-a-package.json).
 
-# How to Use
+## How to Use
 
-In order to use this runner in your project, edit the `codingame.yml` file and add the following lines to your project:
+In order to use the current version of the runner in your project, edit the `techio.yml` file and add the following lines to your project:
 
 ```yaml
 runner: techio/node-npm-runner:1.1.0-node-7.4
-
 ```
 
-## Example
+### Example
 
 In this example, the student is asked to write a method `toUpper()` (file `uppercase.js`):
 
@@ -23,6 +22,7 @@ In this example, the student is asked to write a method `toUpper()` (file `upper
 function toUpper(str) {
 	return str.toUpperCase();
 }
+
 module.exports = toUpper;
 ```
 
@@ -30,16 +30,19 @@ In order to test the answer, the following unit test is created (file `tests/tes
 
 ```javascript
 var toUpper = require('./uppercase.js');
-var assert = require('assert');
+var assert  = require('assert');
+
 it('should return HELLO', function() {
 	assert.equal('HELLO', toUpper('hello'));
 });
+
 it('should return WORLD', function() {
 	assert.equal('WORLD', toUpper('world'));
 });
 ```
 
 We include the unit testing library mocha in the package.json file:
+
 ```javascript
 {
 	"dependencies": {
@@ -52,3 +55,10 @@ We include the unit testing library mocha in the package.json file:
 In the lesson, the unit test can be called using:
 
 `@[Test unittest: uppercase]({"stubs":["uppercase.js"], "command":"node_modules/mocha/bin/mocha test.js --reporter list"})`
+In the lesson, the unit test can be called using:
+
+`@[Test unittest: uppercase]({"stubs":["uppercase.js"], "command":"node_modules/mocha/bin/mocha test.js --reporter list"})`
+
+## License
+
+MIT
